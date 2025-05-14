@@ -1,0 +1,50 @@
+# Compiled source files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages and archives
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and editor directories
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+
+# Node.js dependencies
+node_modules/
+
+# Python caches
+__pycache__/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build directories
+/dist/
+/build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+.venv/

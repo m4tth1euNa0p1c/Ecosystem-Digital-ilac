@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Guitare électrique",
+    "description": "Instrument à cordes amplifié, utilisé dans le rock et le blues.",
+    "specifications": {
+      "brand": "Fender",
+      "model": "Stratocaster",
+      "strings": 6,
+      "body_material": "Alder"
+    },
+    "tags": ["cordes", "rock", "amplifié"]
+  },
+  {
+    "name": "Piano à queue",
+    "description": "Instrument à clavier classique, offrant une large palette dynamique.",
+    "specifications": {
+      "brand": "Yamaha",
+      "model": "CFX",
+      "keys": 88,
+      "finish": "noir poli"
+    },
+    "tags": ["classique", "acoustique", "clavier"]
+  },
+  {
+    "name": "Batterie acoustique",
+    "description": "Ensemble de percussion permettant de créer le rythme d’un morceau.",
+    "specifications": {
+      "brand": "Pearl",
+      "shell_material": "bouleau",
+      "configuration": "5 pièces",
+      "hardware_finish": "chrome"
+    },
+    "tags": ["percussion", "rythme", "rock"]
+  }
+]

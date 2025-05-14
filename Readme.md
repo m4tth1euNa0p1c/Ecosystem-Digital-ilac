@@ -1,41 +1,136 @@
-# Ecosystem Digital ILAC
+# Python API Interaction
 
 ## Description
-Ecosystem Digital ILAC 
 
-## Fonctionnalités
-- A faire
+Ce projet illustre comment récupérer et parser un fichier JSON personnalisé hébergé via GitHub Pages, puis afficher son contenu en console avec Python.
+
+## Structure du projet
+
+```
+
+project-root/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── custom\_data.json               # Fichier JSON custom accessible via GitHub Pages
+├── data/
+│   └── custom\_data.json           # Optionnel : copie locale des données
+├── src/
+│   ├── **init**.py
+│   └── fetch\_parse.py             # Script principal : récupération et parsing JSON
+├── tests/
+│   ├── **init**.py
+│   ├── test\_fetch.py              # Tests unitaires pour la récupération HTTP
+│   └── test\_parse.py              # Tests unitaires pour le parsing JSON
+├── docs/
+│   ├── report.pdf                 # Rapport PDF final
+│   ├── screenshots/
+│   │   ├── folder\_structure.png
+│   │   └── terminal\_output.png
+│   └── presentation.pptx          # Support de présentation (facultatif)
+├── .github/
+│   ├── workflows/
+│   │   └── ci.yml                 # Pipeline GitHub Actions (lint, tests)
+│   └── pages/
+│       └── custom\_data.json       # Version publique pour GitHub Pages
+└── LICENSE                        # (Facultatif)
+
+```
 
 ## Installation
-1. Clonez le dépôt :
+
+1. **Cloner le dépôt**  
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/<username>/<repository-name>.git
+   cd <repository-name>
    ```
-2. Accédez au répertoire du projet :
-   ```bash
-   cd Ecosystem-Digital-ilac
+
+2. **Créer et activer l’environnement virtuel**
+
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate
    ```
-3. Créez un environnement virtuel Python :
+
+3. **Installer les dépendances**
+
    ```bash
-   python3 -m venv env
-   ```
-4. Activez l'environnement virtuel :
-   ```bash
-   source env/bin/activate
-   ```
-5. Installez les dépendances :
-   ```bash
+   pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
-## Utilisation
+## Création du fichier JSON personnalisé
 
-- A faire
+* Créez un fichier `custom_data.json` (à la racine ou dans `data/`) contenant au moins 3 objets JSON.
+* Chaque objet doit comporter :
 
-## Contribution
+  * `name` (string)
+  * `description` (string)
+  * `specifications` (object)
+  * `tags` (array)
+  * Tout autre champ pertinent à votre thème (instruments, livres, films…).
 
-- A faire
+Exemple :
 
-## Auteurs
-- Matthieu (Responsable du projet)
-- Leila (Responsable du projet)
+```json
+[
+  {
+    "name": "Guitare électrique",
+    "description": "Instrument à cordes amplifié, utilisé dans le rock.",
+    "specifications": { "brand": "Fender", "model": "Stratocaster", "strings": 6 },
+    "tags": ["cordes", "rock"]
+  },
+  …
+]
+```
+
+## Hébergement via GitHub Pages
+
+1. Rendez-vous dans les **Settings → Pages** de votre dépôt.
+2. Sélectionnez la branche `main` (ou `master`) et le dossier `/pages` (ou `/root`).
+3. Vérifiez que votre `custom_data.json` est accessible publiquement, par exemple :
+
+   ```
+   https://<username>.github.io/<repository-name>/custom_data.json
+   ```
+
+## Exécution du script
+
+```bash
+python src/fetch_parse.py
+```
+
+Le script :
+
+1. Récupère le JSON depuis l’URL GitHub Pages.
+2. Parse les données.
+3. Affiche chaque élément (nom, description, spécifications, tags) en console.
+4. Gère les erreurs de réseau et de format JSON.
+
+## Tests
+
+Lancez les tests unitaires avec **pytest** :
+
+```bash
+pytest --maxfail=1 --disable-warnings --verbose
+```
+
+## Rapport PDF
+
+* Créez un rapport PDF contenant :
+
+  * Page de garde (titre, noms, numéro de groupe, date)
+  * Capture d’écran de la structure de dossiers
+  * Capture d’écran de la sortie terminal
+  * Description du projet et de son fonctionnement
+* Placez-le dans `docs/report.pdf` avant soumission.
+
+## Présentation
+
+Préparez une brève démonstration (5–10 min) pour expliquer :
+
+* La structure du code
+* Le flux de récupération et de parsing
+* Les choix techniques et les difficultés rencontrées
+
+Le Q\&A suit immédiatement après.
