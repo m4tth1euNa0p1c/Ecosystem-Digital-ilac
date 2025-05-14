@@ -76,6 +76,27 @@
       "finish": "argent"
     },
     "tags": ["vent", "classique", "mélodieux"]
+  },
+  {
+    "name": "Violoncelle",
+    "description": "Instrument à cordes frottées, au registre grave, essentiel dans les orchestres classiques.",
+    "specifications": {
+      "brand": "Stentor",
+      "model": "Student II",
+      "strings": 4,
+      "wood_type": "érable et épicéa"
+    },
+    "tags": ["cordes", "classique", "orchestre"]
+  },
+  {
+    "name": "Clarinette",
+    "description": "Instrument à vent à anche simple, utilisé en musique classique, jazz et harmonie.",
+    "specifications": {
+      "brand": "Buffet Crampon",
+      "model": "E11",
+      "key": "Bb",
+      "material": "ébène"
+    },
+    "tags": ["vent", "classique", "bois"]
   }
-
 ]
