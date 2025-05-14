@@ -22,7 +22,6 @@ def test_parse_and_display_plain_list(capsys):
     assert "Tags        : tagA, tagB" in captured
 
 def test_parse_and_display_missing_fields(capsys):
-    # If some keys are missing, get() returns None or empty list/dict
     data = [
         {"name": "OnlyName"}
     ]
@@ -31,7 +30,5 @@ def test_parse_and_display_missing_fields(capsys):
 
     assert "Nom         : OnlyName" in captured
     assert "Description : None" in captured
-    # Even if specifications is absent, it should not crash
     assert "Spécifications :" in captured
-    # Tags should default to empty list
     assert "Tags        :" in captured

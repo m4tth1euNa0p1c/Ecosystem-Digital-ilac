@@ -1,4 +1,4 @@
-# Python API Interaction
+# Python API Interaction ILAC Assignement
 
 ## Description
 
@@ -8,7 +8,7 @@ Ce projet illustre comment récupérer et parser un fichier JSON personnalisé h
 
 ```
 
-project-root/
+assignement/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
@@ -41,8 +41,8 @@ project-root/
 
 1. **Cloner le dépôt**  
    ```bash
-   git clone https://github.com/<username>/<repository-name>.git
-   cd <repository-name>
+   git clone https://github.com/m4tth1euNa0p1c/Ecosystem-Digital-ilac.git
+   cd Ecosystem-Digital-ilac
    ```
 
 2. **Créer et activer l’environnement virtuel**
@@ -91,7 +91,7 @@ Exemple :
 3. Vérifiez que votre `custom_data.json` est accessible publiquement, par exemple :
 
    ```
-   https://<username>.github.io/<repository-name>/custom_data.json
+[   https://<username>.github.io/<repository-name>/custom_data.json](https://github.com/m4tth1euNa0p1c/Ecosystem-Digital-ilac/blob/main/custom_data.json)
    ```
 
 ## Exécution du script
