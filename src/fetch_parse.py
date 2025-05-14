@@ -31,11 +31,11 @@ def main():
     for url in (pages_url, raw_url):
         try:
             data = fetch_json(url)
-            print(f"✅ Chargé depuis : {url}")
+            print(f"Chargé depuis : {url}")
             break
         except requests.HTTPError as e:
             if e.response.status_code == 404:
-                print(f"⚠️ 404 pour {url}, passage à la source suivante...", file=sys.stderr)
+                print(f"404 pour {url}, passage à la source suivante...", file=sys.stderr)
             else:
                 print(f"[ERROR] Erreur HTTP pour {url} : {e}", file=sys.stderr)
         except Exception as e:
