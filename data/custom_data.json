@@ -31,5 +31,51 @@
       "hardware_finish": "chrome"
     },
     "tags": ["percussion", "rythme", "rock"]
+  },
+  {
+    "name": "Violon",
+    "description": "Instrument à cordes frottées, utilisé dans la musique classique et le folk.",
+    "specifications": {
+      "brand": "Stradivarius",
+      "model": "1714",
+      "strings": 4,
+      "wood_type": "épicéa"
+    },
+    "tags": ["cordes", "classique", "folk"]
+  },
+  {
+    "name": "Trompette",
+    "description": "Instrument à vent en laiton, utilisé dans le jazz et la musique classique.",
+    "specifications": {
+      "brand": "Bach",
+      "model": "Stradivarius",
+      "key": "Bb",
+      "finish": "laiton verni"
+    },
+    "tags": ["vent", "jazz", "classique"]
+  },
+
+  {
+    "name": "Saxophone alto",
+    "description": "Instrument à vent en laiton, utilisé dans le jazz et la musique classique.",
+    "specifications": {
+      "brand": "Selmer",
+      "model": "Mark VI",
+      "key": "Eb",
+      "finish": "laiton verni"
+    },
+    "tags": ["vent", "jazz", "classique"]
+  },
+  {
+    "name": "Flûte traversière",
+    "description": "Instrument à vent en métal, produit un son doux et mélodieux.",
+    "specifications": {
+      "brand": "Yamaha",
+      "model": "YFL-222",
+      "key": "C",
+      "finish": "argent"
+    },
+    "tags": ["vent", "classique", "mélodieux"]
   }
+
 ]

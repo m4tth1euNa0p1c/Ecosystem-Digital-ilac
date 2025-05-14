@@ -99,38 +99,3 @@ Exemple :
 ```bash
 python src/fetch_parse.py
 ```
-
-Le script :
-
-1. Récupère le JSON depuis l’URL GitHub Pages.
-2. Parse les données.
-3. Affiche chaque élément (nom, description, spécifications, tags) en console.
-4. Gère les erreurs de réseau et de format JSON.
-
-## Tests
-
-Lancez les tests unitaires avec **pytest** :
-
-```bash
-pytest --maxfail=1 --disable-warnings --verbose
-```
-
-## Rapport PDF
-
-* Créez un rapport PDF contenant :
-
-  * Page de garde (titre, noms, numéro de groupe, date)
-  * Capture d’écran de la structure de dossiers
-  * Capture d’écran de la sortie terminal
-  * Description du projet et de son fonctionnement
-* Placez-le dans `docs/report.pdf` avant soumission.
-
-## Présentation
-
-Préparez une brève démonstration (5–10 min) pour expliquer :
-
-* La structure du code
-* Le flux de récupération et de parsing
-* Les choix techniques et les difficultés rencontrées
-
-Le Q\&A suit immédiatement après.
